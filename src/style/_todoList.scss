@@ -1,0 +1,53 @@
+@import "./variables";
+.todo-list {
+  background-color: white;
+  margin: auto;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+}
+.todo-container {
+  display: flex;
+  align-items: $alignItms;
+  width: $mainWidth;
+  border-bottom: 2px solid #efefef;
+  .todo-item {
+    display: flex;
+    align-items: $alignItms;
+    padding: 5px;
+    width: $mainWidth;
+    border-bottom: 2px solid #efefef;
+    font-weight: 100;
+    font-size: 15px;
+    color: #333333;
+  }
+  .todo-bin {
+    display: none;
+    margin-right: 25px;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: #b04747;
+  }
+  &:hover .todo-bin {
+    display: flex;
+  }
+  .todo-title {
+    margin-bottom: -20px;
+    font-size: 22px;
+    font-family: initial;
+    font-weight: 400;
+  }
+  .todo-row-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .todo-date {
+    font-size: 12px;
+    margin-top: 22px;
+    font-family: initial;
+    font-weight: 200;
+  }
+}
